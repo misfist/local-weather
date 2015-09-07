@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -31,75 +32,56 @@ table {
   border-spacing: 0; }
 
 h1,
-h2, .btn, article blockquote {
-  text-shadow: 2px 2px 1px #6C3F0E;
+h2 {
+  text-shadow: 2px 2px 1px #333;
   text-shadow: -2px -2px -1px #AAC0C8; }
 
 h1,
-h2, .btn {
-  font-family: "Sigmar One", serif;
-  color: #CD6B00; }
+h2 {
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  color: #fff; }
 
-.bubble:after, article blockquote:after, section:after, .container:after, footer:after, article blockquote cite:after {
+section:after, .container:after, footer:after {
   content: "";
   display: table;
   clear: both; }
 
-.bubble, article blockquote {
-  position: relative;
-  width: 75%;
-  min-height: 145px;
-  padding: 20px;
-  background: rgba(0, 93, 129, 0.7);
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px; }
-  .bubble:after, article blockquote:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 15px 0 15px 28px;
-    border-color: transparent #005D81;
-    display: block;
-    width: 0;
-    z-index: 1;
-    margin-top: -15px;
-    right: -28px;
-    top: 34%; }
-
 html,
 body {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  color: #fff;
   min-height: 100%;
   height: 100%; }
 
 body {
-  background-image: url(http://sandbox.misfist.com/quote-generator/assets/images/oscar_the_grouch_sm.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #AAC0C8; }
+  background-color: #005D81; }
 
-@media only screen and (min-width: 768px) {
-  body {
-    background-image: url(http://sandbox.misfist.com/quote-generator/assets/images/oscar_the_grouch.jpg); } }
+body[class*="clear"] {
+  background-color: #005D81; }
+
+body[class*="clouds"] {
+  background-color: #596A71; }
 
 h1,
 h2 {
   margin: 10px 0; }
 
 h1 {
-  font-size: 45px; }
+  font-size: 28px; }
 
 h2 {
-  font-size: 28px; }
+  font-size: 46px;
+  font-weight: 300; }
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 85px; }
+    font-size: 40px; }
   h2 {
-    font-size: 40px; } }
+    font-size: 85px; } }
 
 section {
   width: 100%;
@@ -118,7 +100,7 @@ section {
     background-size: cover; } }
 
 #main-nav {
-  background-color: #005D81; }
+  background-color: #0B3444; }
   #main-nav a,
   #main-nav a:link {
     color: #fff; }
@@ -137,7 +119,17 @@ section {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px solid #fff;
-    box-shadow: 0px -1px 0px 0px #111; }
+    box-shadow: 0px -1px 0px 0px #333; }
+  #home .forecast {
+    font-size: 24px; }
+    #home .forecast #high:before {
+      content: 'High: '; }
+    #home .forecast #high:after {
+      content: '° | '; }
+    #home .forecast #low:before {
+      content: 'Low: '; }
+    #home .forecast #low:after {
+      content: '°'; }
 
 footer {
   background-color: #0B3444;
@@ -169,51 +161,43 @@ em {
 
 article {
   margin-top: 20px; }
-  article blockquote {
-    width: 75%;
-    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
-    font-size: 20px; }
-    article blockquote p {
-      line-height: 1.3;
-      color: #fff; }
-    article blockquote p + p {
-      padding-top: 0;
-      padding-bottom: 0; }
-    article blockquote cite {
-      float: right;
-      display: block;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      color: #fff;
-      font-style: italic; }
-      article blockquote cite:before {
-        content: '~'; }
 
 @media only screen and (min-width: 768px) {
   article {
     margin-top: 100px; } }
 
-.btn {
-  margin-top: 20px;
-  box-shadow: 1px 1px 0px 0px #AAC0C8;
-  transition: all 0.2s ease-in-out;
-  font-size: 24px;
-  background-color: #CD6B00;
-  color: #fff; }
-  .btn.tweet-this {
-    background-color: #6C3F0E;
-    font-size: 18px; }
-    .btn.tweet-this:hover,
-    .btn.tweet-this:focus {
-      background-color: #CD6B00; }
-  .btn a,
-  .btn a:link {
-    color: #fff; }
-  .btn:hover,
-  .btn:focus {
-    background-color: #005D81;
+label {
+  color: #0B3444;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.well {
+  background-color: transparent;
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff; }
+
+#weather-toggle {
+  display: block;
+  margin: 0 auto 10px auto; }
+  #weather-toggle .wi-fahrenheit,
+  #weather-toggle .wi-celsius {
+    display: inline-block;
+    font-size: 45px;
+    color: #0B3444;
+    cursor: pointer; }
+    #weather-toggle .wi-fahrenheit:before,
+    #weather-toggle .wi-fahrenheit:after,
+    #weather-toggle .wi-celsius:before,
+    #weather-toggle .wi-celsius:after {
+      margin: 5px; }
+  #weather-toggle .active .wi-fahrenheit,
+  #weather-toggle .active .wi-celsius {
     color: #fff;
-    transform: scale(1.1); }
+    cursor: inherit; }
 
 .navbar-brand {
   margin: 0; }
@@ -223,10 +207,6 @@ article {
 
 .navbar-inverse .navbar-toggle {
   border-color: #fff; }
-
-.image-border {
-  border: 15px solid #008664;
-  border-radius: 50%; }
 
 .social-links li {
   padding-top: 5px;
