@@ -1,0 +1,10 @@
+*.log
+.htaccess
+.DS_Store
+*.csv
+*.odt
+*.bak
+sitemap.xml
+*.sass-cache
+.brackets.json
+node_modules

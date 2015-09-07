@@ -1,0 +1,372 @@
+
+@import 'reset';
+
+// Variables
+
+// clear sky - Blue - #005D81
+// few clouds - Blue Gray - #596A71
+// scattered clouds - Blue Light Gray - #AAC0C8
+// broken clouds - Blue Lighter Gray - #AAC0C8
+// shower rain - Green Gray - #688571
+// rain - Green - #00982E
+// thunderstorm - Magenta - #A5005D
+// snow - Silver - silver
+// mist - Light Gray - #917083
+
+$primary: #005D81;
+$primary-dark: #0B3444;
+$primary-light: #AAC0C8;
+$secondary: #CD6B00;
+$secondary-dark: #6C3F0E;
+$secondary-light: #FFEBD6;
+$tertiary: #A5005D;
+$accent: #008664;
+
+$white: #fff;
+$black: #111;
+
+// Fonts
+$serif: 'Sigmar One', serif;
+$sans-serif: 'Helvetica', Arial, sans-serif;
+$montserrat: 'Montserrat', $sans-serif;
+$heading: $serif;
+$body-text: $sans-serif;
+
+
+// RWD BREAKPOINTS 
+// mobile first! so you only have to use floats etc in larger sizes
+// set breakpoints where your content breaks, not particular devices
+
+$xs: 768px; //Extra Small Phones
+$sm: 769px; //Small Devices Tablets and Up
+$md: 992px; //Medium Devices  Desktops and Up
+$lg: 1200px; //Large Devices Large Desktops and Up
+
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media screen and (max-width: 768px)  { @content; } 
+  }
+  @if $point == sm {
+    @media screen and (min-width: 769px) { @content; }
+  }
+  @if $point == md {
+    @media screen and (min-width: 992px) { @content; }
+  }
+  @if $point == tall {
+    @media screen and ( min-height: 600px ) { @content; }
+  }
+  @else if $point == lg {
+    @media screen and (min-width: 1200px) { @content; }
+  }
+}
+
+// Extends
+
+%text-shadow {
+  text-shadow: 2px 2px 1px $secondary-dark;
+  text-shadow: -2px -2px -1px $primary-light;  
+}
+
+%header {
+  @extend %text-shadow;
+  font-family: $heading;
+  color: $secondary;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%text-background {
+    padding: 10px;
+    background: transparentize($primary-light, .7);
+    border-radius: 30px;
+}
+
+.bubble {
+  position: relative;
+  width: 75%;
+  min-height: 145px;
+  @extend %clearfix;
+  padding: 20px;
+  background: transparentize($primary, .3);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 15px 0 15px 28px;
+      border-color: transparent $primary;
+      display: block;
+      width: 0;
+      z-index: 1;
+      margin-top: -15px;
+      right: -28px;
+      top: 34%;
+  }
+
+}
+
+html,
+body {
+  font-family: $body-text;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+
+  background-image: url(http://sandbox.misfist.com/quote-generator/assets/images/oscar_the_grouch_sm.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $primary-light;
+
+}
+
+@media only screen and (min-width : 768px) {
+  body {
+    background-image: url(http://sandbox.misfist.com/quote-generator/assets/images/oscar_the_grouch.jpg);
+  }
+}
+
+// Block Elements
+h1,
+h2 {
+  @extend %header;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+@media only screen and (min-width : 768px) {
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+section {
+  @extend %clearfix;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 700px;
+  background-position: top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+@media only screen and (min-width : 768px) {
+  section {
+    background-size: cover;
+  }
+}
+
+// Main Sections
+
+.container {
+  @extend %clearfix;
+}
+
+#main-nav {
+  background-color: $primary;
+
+  a,
+  a:link {
+    color: $white;
+  }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  #main-nav {
+    .navbar-nav {
+      float: right;
+    }
+  }
+
+}
+
+#home {
+  padding-top: 100px;
+
+  header {}
+
+  h1,
+  h2 {
+      margin: 0;
+  }
+
+  nav {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid $white;
+    box-shadow: 0px -1px 0px 0px $black;
+  }
+
+}
+
+footer {
+  @extend %clearfix;
+  background-color: $primary-dark;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: $white;
+  a,
+  a:link {
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+// Sticky footer
+@media only screen and (min-width : 768px) {
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+@media screen and ( min-height: 600px ){
+  footer {
+    bottom: 0;
+    position: absolute;
+  } 
+}
+
+// Common Elements
+
+em {
+  font-style: italic;
+}
+
+article {
+
+  margin-top: 20px;
+
+    blockquote {
+    width: 75%;
+    
+    font-family: $montserrat;
+    font-size: 20px;
+    @extend %text-shadow;
+    @extend .bubble;
+
+    p {
+      line-height: 1.3;
+      color: $white;
+    }
+    
+    p + p {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    cite {
+      @extend %clearfix;
+      float: right;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $white;
+      font-style: italic;
+      &:before {
+        content: '~';
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width : 768px) {
+
+  article {
+    margin-top: 100px;
+  }
+
+}
+
+.btn {
+  margin-top: 20px;
+  box-shadow: 1px 1px 0px 0px $primary-light;
+  transition: all .2s ease-in-out;
+  @extend %header;
+  font-size: 24px;
+
+  background-color: $secondary;
+  color: $white;
+
+  &.tweet-this {
+    background-color: $secondary-dark;
+    font-size: 18px;
+    &:hover,
+    &:focus {
+      background-color: $secondary;
+    }
+  }
+
+  a,
+  a:link {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary;
+    color: $white;
+    transform: scale(1.1);
+  }
+}
+
+
+// Specific Elements
+.navbar-brand {
+  margin: 0;
+  a,
+  a:link {
+    color: $white;
+  }
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: $white;
+}
+
+.image-border {
+  border: 15px solid $accent;
+  border-radius: 50%;
+}
+
+.social-links {
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

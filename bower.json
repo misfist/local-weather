@@ -1,0 +1,31 @@
+{
+  "name": "local-weather",
+  "version": "0.0.1",
+  "authors": [
+    "Pea <pea@misfist.com>"
+  ],
+  "description": "Local Weather app for freeCodeCamp. (http://www.freecodecamp.com/challenges/zipline-show-the-local-weather)",
+  "main": "index.html",
+  "keywords": [
+    "JavaScript",
+    "jQuery",
+    "bootstrap",
+    "quotes",
+    "freeCodeCamp"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/misfist/local-weather",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0"
+  }
+}

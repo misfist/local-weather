@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Oscar Speaks - A Quote Generator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quote generating featuring Oscar the Grouch.">
+    
+    <link rel='stylesheet' href='assets/vendor/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='assets/vendor/fontawesome/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <h1 class="navbar-brand"><a href="#home">Local Weather</a></h1>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="https://twitter.com/misfist" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/patricialutz" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+                <li><a href="https://github.com/misfist" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>
+                <li><a href="http://www.freecodecamp.com/misfist" target="_blank"><span class="fa fa-fire"></span> freeCodeCamp</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+      <div class="container">
+        <header role="banner">
+          <h1>Local Weather</h1>
+          <h2 id="location-name">{{main.temp}}
+            {{main.temp_min}}{{main.temp_max}}</h2>
+        </header>
+        <article id="weather-info" class="row">
+
+          <ul >
+            <li class="col-xs-4">{{city.state}}</li>
+            <li class="col-xs-4">{{weather.description}}</li>
+            <li class="col-xs-4">{{wind.speed}}</li>
+          </ul>
+          
+        </article>
+      </div>
+    </section>
+    <footer id="site-footer">
+      <div class="container">
+         <nav class="footer-nav pull-right">
+          <ul class="list-inline">
+              <li><span class="fa fa-twitter"></span> <a href="https://twitter.com/misfist" target="_blank">Twitter</a></li>
+              <li><span class="fa fa-linkedin"></span> <a href="https://www.linkedin.com/in/patricialutz" target="_blank">LinkedIn</a></li>
+              <li><span class="fa fa-github"></span> <a href="https://github.com/misfist" target="_blank">GitHub</a></li>
+              <li><span class="fa fa-fire"></span> <a href="http://www.freecodecamp.com/misfist" target="_blank">freeCodeCamp</a></li>
+          </ul>
+        </nav>
+        <div class="copyleft"><span class="fa fa-copyright fa-flip-horizontal"></span> Copyleft &bull; <a href="https://github.com/misfist/local-weather" target="_blank"><i class="fa fa-github"></i> Source</a></div>
+      </div>
+    </footer>
+      <script src='assets/vendor/jquery/dist/jquery.min.js'></script>
+      <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="assets/js/main.js"></script>
+  </body>
+</html>
