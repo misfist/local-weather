@@ -257,6 +257,7 @@ section {
 }
 
 #weather-info {
+  background: transparentize($primary-light, .7);
   label {
     font-size: 35px;
   }

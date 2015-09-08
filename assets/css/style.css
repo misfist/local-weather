@@ -178,8 +178,10 @@ section {
     #home .forecast #low:after {
       content: '°'; }
 
-#weather-info label {
-  font-size: 35px; }
+#weather-info {
+  background: rgba(170, 192, 200, 0.3); }
+  #weather-info label {
+    font-size: 35px; }
 
 #current-conditions {
   padding: 5px 0 10px 0; }
