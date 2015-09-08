@@ -55,6 +55,9 @@
 $(document).ready(function() {
 
     console.log('main.js');
+    
+    // Instantiate Bootstrap tooltips
+    $('[data-toggle="tooltip"]').tooltip();
 
     // API key for api.openweathermap.org
     const APIKEY = 'ae5ad98abb4a0a8b51d04136004b8061';
@@ -164,8 +167,6 @@ $(document).ready(function() {
         console.log( "Request Failed: " + err );
 
     });
-
-
 
 
 // End
