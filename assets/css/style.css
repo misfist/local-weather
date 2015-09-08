@@ -46,6 +46,54 @@ section:after, .container:after, footer:after {
   display: table;
   clear: both; }
 
+body[class*="clouds"], body[class*="mist"],
+body[class*="fog"], body[class*="rain"],
+body[class*="drizzle"], body[class*="thunderstorm"], body[class*="snow"],
+body[class*="sleet"], body[class*="cold"] {
+  color: #0B3444; }
+  body[class*="clouds"] h1,
+  body[class*="mist"] h1,
+  body[class*="fog"] h1,
+  body[class*="rain"] h1,
+  body[class*="drizzle"] h1,
+  body[class*="thunderstorm"] h1,
+  body[class*="snow"] h1,
+  body[class*="sleet"] h1,
+  body[class*="cold"] h1,
+  body[class*="clouds"] h2, body[class*="mist"] h2,
+  body[class*="fog"] h2, body[class*="rain"] h2,
+  body[class*="drizzle"] h2, body[class*="thunderstorm"] h2, body[class*="snow"] h2,
+  body[class*="sleet"] h2, body[class*="cold"] h2 {
+    color: #0B3444; }
+  body[class*="clouds"] #weather-toggle .wi-fahrenheit,
+  body[class*="mist"] #weather-toggle .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .wi-fahrenheit,
+  body[class*="rain"] #weather-toggle .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .wi-fahrenheit,
+  body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit,
+  body[class*="snow"] #weather-toggle .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .wi-fahrenheit,
+  body[class*="cold"] #weather-toggle .wi-fahrenheit,
+  body[class*="clouds"] #weather-toggle .wi-celsius, body[class*="mist"] #weather-toggle .wi-celsius,
+  body[class*="fog"] #weather-toggle .wi-celsius, body[class*="rain"] #weather-toggle .wi-celsius,
+  body[class*="drizzle"] #weather-toggle .wi-celsius, body[class*="thunderstorm"] #weather-toggle .wi-celsius, body[class*="snow"] #weather-toggle .wi-celsius,
+  body[class*="sleet"] #weather-toggle .wi-celsius, body[class*="cold"] #weather-toggle .wi-celsius {
+    color: #fff; }
+  body[class*="clouds"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="cold"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="clouds"] #weather-toggle .active .wi-celsius, body[class*="mist"] #weather-toggle .active .wi-celsius,
+  body[class*="fog"] #weather-toggle .active .wi-celsius, body[class*="rain"] #weather-toggle .active .wi-celsius,
+  body[class*="drizzle"] #weather-toggle .active .wi-celsius, body[class*="thunderstorm"] #weather-toggle .active .wi-celsius, body[class*="snow"] #weather-toggle .active .wi-celsius,
+  body[class*="sleet"] #weather-toggle .active .wi-celsius, body[class*="cold"] #weather-toggle .active .wi-celsius {
+    color: #0B3444; }
+
 html,
 body {
   font-family: "Roboto", "Helvetica", Arial, sans-serif;
@@ -71,82 +119,24 @@ body[class*="clouds"] {
 body[class*="mist"],
 body[class*="fog"] {
   background-color: #917083;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/fog.jpg");
-  color: #0B3444; }
-  body[class*="mist"] h1,
-  body[class*="mist"] h2,
-  body[class*="fog"] h1,
-  body[class*="fog"] h2 {
-    color: #0B3444; }
-  body[class*="mist"] #weather-toggle .wi-fahrenheit,
-  body[class*="mist"] #weather-toggle .wi-celsius,
-  body[class*="fog"] #weather-toggle .wi-fahrenheit,
-  body[class*="fog"] #weather-toggle .wi-celsius {
-    color: #fff; }
-  body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="mist"] #weather-toggle .active .wi-celsius,
-  body[class*="fog"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="fog"] #weather-toggle .active .wi-celsius {
-    color: #0B3444; }
+  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/fog.jpg"); }
 
 body[class*="rain"],
 body[class*="drizzle"] {
   background-color: #688571;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/rain.jpg");
-  color: #0B3444; }
-  body[class*="rain"] h1,
-  body[class*="rain"] h2,
-  body[class*="drizzle"] h1,
-  body[class*="drizzle"] h2 {
-    color: #0B3444; }
-  body[class*="rain"] #weather-toggle .wi-fahrenheit,
-  body[class*="rain"] #weather-toggle .wi-celsius,
-  body[class*="drizzle"] #weather-toggle .wi-fahrenheit,
-  body[class*="drizzle"] #weather-toggle .wi-celsius {
-    color: #fff; }
-  body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="rain"] #weather-toggle .active .wi-celsius,
-  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="drizzle"] #weather-toggle .active .wi-celsius {
-    color: #0B3444; }
+  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/rain.jpg"); }
 
 body[class*="storm"] {
   background-color: #440946; }
 
 body[class*="thunderstorm"] {
   background-color: #440946;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/thunder.jpg");
-  color: #0B3444; }
-  body[class*="thunderstorm"] h1,
-  body[class*="thunderstorm"] h2 {
-    color: #0B3444; }
-  body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit,
-  body[class*="thunderstorm"] #weather-toggle .wi-celsius {
-    color: #fff; }
-  body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="thunderstorm"] #weather-toggle .active .wi-celsius {
-    color: #0B3444; }
+  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/thunder.jpg"); }
 
 body[class*="snow"],
 body[class*="sleet"] {
   background-color: silver;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/snow.jpg");
-  color: #0B3444; }
-  body[class*="snow"] h1,
-  body[class*="snow"] h2,
-  body[class*="sleet"] h1,
-  body[class*="sleet"] h2 {
-    color: #0B3444; }
-  body[class*="snow"] #weather-toggle .wi-fahrenheit,
-  body[class*="snow"] #weather-toggle .wi-celsius,
-  body[class*="sleet"] #weather-toggle .wi-fahrenheit,
-  body[class*="sleet"] #weather-toggle .wi-celsius {
-    color: #fff; }
-  body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="snow"] #weather-toggle .active .wi-celsius,
-  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="sleet"] #weather-toggle .active .wi-celsius {
-    color: #0B3444; }
+  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/snow.jpg"); }
 
 body[class*="tornado"] {
   background-color: #440946; }
@@ -160,17 +150,7 @@ body[class*="hot"] {
 
 body[class*="cold"] {
   background-color: silver;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/cold.jpg");
-  color: #0B3444; }
-  body[class*="cold"] h1,
-  body[class*="cold"] h2 {
-    color: #0B3444; }
-  body[class*="cold"] #weather-toggle .wi-fahrenheit,
-  body[class*="cold"] #weather-toggle .wi-celsius {
-    color: #fff; }
-  body[class*="cold"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="cold"] #weather-toggle .active .wi-celsius {
-    color: #0B3444; }
+  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/cold.jpg"); }
 
 h1,
 h2 {

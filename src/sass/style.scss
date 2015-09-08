@@ -105,6 +105,22 @@ $lg: 1200px; //Large Devices Large Desktops and Up
     border-radius: 30px;
 }
 
+%light-background {
+    color: $primary-dark;
+    h1,
+    h2 {
+      color: $primary-dark;
+    }
+    #weather-toggle .wi-fahrenheit,
+    #weather-toggle .wi-celsius {
+      color: $white;
+    }
+    #weather-toggle .active .wi-fahrenheit,
+    #weather-toggle .active .wi-celsius {
+      color: $primary-dark;
+    }
+}
+
 html,
 body {
   font-family: $body-text;
@@ -132,45 +148,21 @@ body[class*="clear"] {
 body[class*="clouds"] {
   background-color: $clouds;
   background-image: url('http://sandbox.misfist.com/local-weather/assets/images/clouds.jpg');
+  @extend %light-background;
 }
 
 body[class*="mist"],
 body[class*="fog"] {
   background-color: $mist;
   background-image: url('http://sandbox.misfist.com/local-weather/assets/images/fog.jpg');
-  color: $primary-dark;
-  h1,
-  h2 {
-    color: $primary-dark;
-  }
-  #weather-toggle .wi-fahrenheit,
-  #weather-toggle .wi-celsius {
-    color: $white;
-  }
-  #weather-toggle .active .wi-fahrenheit,
-  #weather-toggle .active .wi-celsius {
-    color: $primary-dark;
-  }
+  @extend %light-background;
 }
 
 body[class*="rain"],
 body[class*="drizzle"] {
   background-color: $rain;
   background-image: url('http://sandbox.misfist.com/local-weather/assets/images/rain.jpg');
-
-  color: $primary-dark;
-  h1,
-  h2 {
-    color: $primary-dark;
-  }
-  #weather-toggle .wi-fahrenheit,
-  #weather-toggle .wi-celsius {
-    color: $white;
-  }
-  #weather-toggle .active .wi-fahrenheit,
-  #weather-toggle .active .wi-celsius {
-    color: $primary-dark;
-  }
+  @extend %light-background;
 }
 
 body[class*="storm"] {
@@ -180,38 +172,14 @@ body[class*="storm"] {
 body[class*="thunderstorm"] {
   background-color: $storm;
   background-image: url('http://sandbox.misfist.com/local-weather/assets/images/thunder.jpg');
-  color: $primary-dark;
-  h1,
-  h2 {
-    color: $primary-dark;
-  }
-  #weather-toggle .wi-fahrenheit,
-  #weather-toggle .wi-celsius {
-    color: $white;
-  }
-  #weather-toggle .active .wi-fahrenheit,
-  #weather-toggle .active .wi-celsius {
-    color: $primary-dark;
-  }
+  @extend %light-background;
 }
 
 body[class*="snow"],
 body[class*="sleet"] {
   background-color: $snow;
   background-image: url('http://sandbox.misfist.com/local-weather/assets/images/snow.jpg');
-  color: $primary-dark;
-  h1,
-  h2 {
-    color: $primary-dark;
-  }
-  #weather-toggle .wi-fahrenheit,
-  #weather-toggle .wi-celsius {
-    color: $white;
-  }
-  #weather-toggle .active .wi-fahrenheit,
-  #weather-toggle .active .wi-celsius {
-    color: $primary-dark;
-  }
+  @extend %light-background;
 }
 
 body[class*="tornado"] {
@@ -230,19 +198,7 @@ body[class*="hot"] {
 body[class*="cold"] {
   background-color: $snow;
   background-image: url('http://sandbox.misfist.com/local-weather/assets/images/cold.jpg');
-  color: $primary-dark;
-  h1,
-  h2 {
-    color: $primary-dark;
-  }
-  #weather-toggle .wi-fahrenheit,
-  #weather-toggle .wi-celsius {
-    color: $white;
-  }
-  #weather-toggle .active .wi-fahrenheit,
-  #weather-toggle .active .wi-celsius {
-    color: $primary-dark;
-  }
+  @extend %light-background;
 }
 
 // Block Elements
