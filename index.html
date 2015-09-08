@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body>
+  <body class="cold">
     <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -42,9 +42,14 @@
     <section id="home">
       <div class="container">
         <header class="text-center" role="banner">
-          <h1>Local Weather</h1>
-          <h2 id="current-temp">{{main.temp}} <i class="wi"></i>{{F/C}}</h2>
-          <div id="weather-toggle"><label>Switch</label> 
+          <h2 id="location">{{city.state}}</h2>
+          <div id="current-conditions">
+            <div id="description">{{weather.description}}</div>
+            <div class="icon"></div>
+            
+          </div>
+          <h1 id="current-temp">{{main.temp}} <i class="wi"></i>{{F/C}}</h1>
+          <div id="weather-toggle"><label class="hidden">Switch</label> 
             <a id="imperial"><i class="wi wi-fahrenheit"></i> <span class="hidden">Fahrenheit</span></a>
             <a id="metric"><i class="wi wi-celsius"></i> <span class="hidden">Celsius</span></a>
           </div>
@@ -55,11 +60,16 @@
         </header>
         <article id="weather-info" class="row">
           <ul >
-            <li class="col-xs-12 col-sm-4 well" id="location"><label>Location</label> <span class="location">{{city.state}}</span></li>
-            <li class="col-xs-12 col-sm-4 well" id="description"><label>Current Conditions</label> <span class="description">{{weather.description}}</span></li>
-            <li class="col-xs-12 col-sm-4 well" id="wind"><label>Wind</label> <span class="wind">{{wind.speed}}</span></li>
+            <li class="col-xs-12 col-sm-4 well" id="sunrise">
+              <label><i class="wi wi-sunrise"></i></label> 
+              <span class="localtime">{{weather.sys.sunrise}}</span></li>
+            <li class="col-xs-12 col-sm-4 well" id="sunset">
+              <label><i class="wi wi-sunset"></i></label> 
+              <span class="localtime">{{weather.sys.sunset}}</span></li>
+            <li class="col-xs-12 col-sm-4 well" id="wind">
+              <label><i class="wi wi-strong-wind"></i></label> 
+              <span class="wind">{{wind.speed}}</span></li>
           </ul>
-          
         </article>
       </div>
     </section>
@@ -77,7 +87,6 @@
       </div>
     </footer>
       <script src='assets/vendor/jquery/dist/jquery.min.js'></script>
-      <script src="assets/vendor/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
       <script src="assets/js/main.js"></script>
   </body>
 </html>

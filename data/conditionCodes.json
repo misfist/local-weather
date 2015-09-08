@@ -1,440 +1,440 @@
 [
   {
-    "id":800,
-    "description":"clear sky ",
-    "icon-day":"file:01d.png",
-    "icon-night":"file:01n.png "
+   "id":800,
+   "description":"clear sky",
+   "icon-day":"wi-day-sunny",
+   "icon-night":"wi-night-clear"
   },
   {
-    "id":801,
-    "description":"few clouds ",
-    "icon-day":"file:02d.png",
-    "icon-night":"file:02n.png "
+   "id":801,
+   "description":"few clouds",
+   "icon-day":"wi-day-cloudy",
+   "icon-night":"wi-night-partly-cloudy"
   },
   {
-    "id":802,
-    "description":"scattered clouds ",
-    "icon-day":"file:03d.png",
-    "icon-night":"file:03d.png "
+   "id":802,
+   "description":"scattered clouds",
+   "icon-day":"wi-day-cloudy",
+   "icon-night":"wi-night-partly-cloudy"
   },
   {
-    "id":803,
-    "description":"broken clouds ",
-    "icon-day":"file:04d.png",
-    "icon-night":"file:03d.png "
+   "id":803,
+   "description":"broken clouds",
+   "icon-day":"wi-day-cloudy",
+   "icon-night":"wi-night-partly-cloudy"
   },
   {
-    "id":804,
-    "description":"overcast clouds ",
-    "icon-day":"file:04d.png",
-    "icon-night":"file:04d.png "
+   "id":804,
+   "description":"overcast clouds",
+   "icon-day":"wi-day-cloudy",
+   "icon-night":"wi-night-alt-cloudy"
   },
   {
-    "id":200,
-    "description":"thunderstorm with light rain ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":200,
+   "description":"thunderstorm with light rain",
+   "icon-day":"file:11d.png",
+   "icon-night":""
   },
   {
-    "id":201,
-    "description":"thunderstorm with rain ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":201,
+   "description":"thunderstorm with rain",
+   "icon-day":"wi-day-storm-showers",
+   "icon-night":"wi-night-alt-thunderstorm"
   },
   {
-    "id":202,
-    "description":"thunderstorm with heavy rain ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":202,
+   "description":"thunderstorm with heavy rain",
+   "icon-day":"wi-day-storm-showers",
+   "icon-night":"wi-night-alt-thunderstorm"
   },
   {
-    "id":210,
-    "description":"light thunderstorm ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":210,
+   "description":"light thunderstorm",
+   "icon-day":"wi-day-thunderstorm",
+   "icon-night":"wi-night-alt-thunderstorm"
   },
   {
-    "id":211,
-    "description":"thunderstorm ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":211,
+   "description":"thunderstorm",
+   "icon-day":"wi-thunderstorm",
+   "icon-night":"wi-thunderstorm"
   },
   {
-    "id":212,
-    "description":"heavy thunderstorm ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":212,
+   "description":"heavy thunderstorm",
+   "icon-day":"wi-day-thunderstorm",
+   "icon-night":"wi-day-thunderstorm"
   },
   {
-    "id":221,
-    "description":"ragged thunderstorm ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":221,
+   "description":"ragged thunderstorm",
+   "icon-day":"wi-lightning",
+   "icon-night":"wi-lightning"
   },
   {
-    "id":230,
-    "description":"thunderstorm with light drizzle ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":230,
+   "description":"thunderstorm with light drizzle",
+   "icon-day":"wi-day-storm-showers",
+   "icon-night":"wi-night-storm-showers"
   },
   {
-    "id":231,
-    "description":"thunderstorm with drizzle ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":231,
+   "description":"thunderstorm with drizzle",
+   "icon-day":"wi-day-storm-showers",
+   "icon-night":"wi-night-storm-showers"
   },
   {
-    "id":232,
-    "description":"thunderstorm with heavy drizzle ",
-    "icon-day":"file:11d.png ",
-    "icon-night":""
+   "id":232,
+   "description":"thunderstorm with heavy drizzle",
+   "icon-day":"wi-day-storm-showers",
+   "icon-night":"wi-night-storm-showers"
   },
   {
-    "id":300,
-    "description":"light intensity drizzle ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":300,
+   "description":"light intensity drizzle",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-sprinkle"
   },
   {
-    "id":301,
-    "description":"drizzle ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":301,
+   "description":"drizzle",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-sprinkle"
   },
   {
-    "id":302,
-    "description":"heavy intensity drizzle ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":302,
+   "description":"heavy intensity drizzle",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-sprinkle"
   },
   {
-    "id":310,
-    "description":"light intensity drizzle rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":310,
+   "description":"light intensity drizzle rain",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-sprinkle"
   },
   {
-    "id":311,
-    "description":"drizzle rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":311,
+   "description":"drizzle rain",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-sprinkle"
   },
   {
-    "id":312,
-    "description":"heavy intensity drizzle rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":312,
+   "description":"heavy intensity drizzle rain",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":313,
-    "description":"shower rain and drizzle ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":313,
+   "description":"shower rain and drizzle",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":314,
-    "description":"heavy shower rain and drizzle ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":314,
+   "description":"heavy shower rain and drizzle",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":321,
-    "description":"shower drizzle ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":321,
+   "description":"shower drizzle",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":500,
-    "description":"light rain ",
-    "icon-day":"file:10d.png ",
-    "icon-night":""
+   "id":500,
+   "description":"light rain",
+   "icon-day":"wi-sprinkle",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":501,
-    "description":"moderate rain ",
-    "icon-day":"file:10d.png ",
-    "icon-night":""
+   "id":501,
+   "description":"moderate rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-rain"
   },
   {
-    "id":502,
-    "description":"heavy intensity rain ",
-    "icon-day":"file:10d.png ",
-    "icon-night":""
+   "id":502,
+   "description":"heavy intensity rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-rain"
   },
   {
-    "id":503,
-    "description":"very heavy rain ",
-    "icon-day":"file:10d.png ",
-    "icon-night":""
+   "id":503,
+   "description":"very heavy rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-rain"
   },
   {
-    "id":504,
-    "description":"extreme rain ",
-    "icon-day":"file:10d.png ",
-    "icon-night":""
+   "id":504,
+   "description":"extreme rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-rain"
   },
   {
-    "id":511,
-    "description":"freezing rain ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":511,
+   "description":"freezing rain",
+   "icon-day":"wi-day-sleet",
+   "icon-night":"wi-night-sleet"
   },
   {
-    "id":520,
-    "description":"light intensity shower rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":520,
+   "description":"light intensity shower rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":521,
-    "description":"shower rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":521,
+   "description":"shower rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":522,
-    "description":"heavy intensity shower rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":522,
+   "description":"heavy intensity shower rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":531,
-    "description":"ragged shower rain ",
-    "icon-day":"file:09d.png ",
-    "icon-night":""
+   "id":531,
+   "description":"ragged shower rain",
+   "icon-day":"wi-day-rain",
+   "icon-night":"wi-night-alt-showers"
   },
   {
-    "id":600,
-    "description":"light snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":600,
+   "description":"light snow",
+   "icon-day":"wi-day-snow",
+   "icon-night":"wi-night-snow"
   },
   {
-    "id":601,
-    "description":"snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":601,
+   "description":"snow",
+   "icon-day":"wi-day-snow",
+   "icon-night":"wi-night-snow"
   },
   {
-    "id":602,
-    "description":"heavy snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":602,
+   "description":"heavy snow",
+   "icon-day":"wi-day-snow",
+   "icon-night":"wi-night-snow"
   },
   {
-    "id":611,
-    "description":"sleet ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":611,
+   "description":"sleet",
+   "icon-day":"wi-day-sleet",
+   "icon-night":"wi-night-sleet"
   },
   {
-    "id":612,
-    "description":"shower sleet ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":612,
+   "description":"shower sleet",
+   "icon-day":"wi-day-sleet",
+   "icon-night":"wi-night-sleet"
   },
   {
-    "id":615,
-    "description":"light rain and snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":615,
+   "description":"light rain and snow",
+   "icon-day":"wi-day-rain-mix",
+   "icon-night":"wi-night-rain-mix"
   },
   {
-    "id":616,
-    "description":"rain and snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":616,
+   "description":"rain and snow",
+   "icon-day":"wi-day-rain-mix",
+   "icon-night":"wi-night-rain-mix"
   },
   {
-    "id":620,
-    "description":"light shower snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":620,
+   "description":"light shower snow",
+   "icon-day":"wi-day-rain-mix",
+   "icon-night":"wi-night-rain-mix"
   },
   {
-    "id":621,
-    "description":"shower snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":621,
+   "description":"shower snow",
+   "icon-day":"wi-day-snow",
+   "icon-night":"wi-night-snow"
   },
   {
-    "id":622,
-    "description":"heavy shower snow ",
-    "icon-day":"file:13d.png ",
-    "icon-night":""
+   "id":622,
+   "description":"heavy shower snow",
+   "icon-day":"wi-day-snow",
+   "icon-night":"wi-night-snow"
   },
   {
-    "id":701,
-    "description":"mist ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":701,
+   "description":"mist",
+   "icon-day":"wi-day-fog",
+   "icon-night":"wi-night-fog"
   },
   {
-    "id":711,
-    "description":"smoke ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":711,
+   "description":"smoke",
+   "icon-day":"wi-smoke",
+   "icon-night":"wi-smoke"
   },
   {
-    "id":721,
-    "description":"haze ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":721,
+   "description":"haze",
+   "icon-day":"wi-day-haze",
+   "icon-night":"wi-fog"
   },
   {
-    "id":731,
-    "description":"sand, dust whirls ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":731,
+   "description":"sand, dust whirls",
+   "icon-day":"wi-sandstorm",
+   "icon-night":"wi-sandstorm"
   },
   {
-    "id":741,
-    "description":"fog ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":741,
+   "description":"fog",
+   "icon-day":"wi-fog",
+   "icon-night":"wi-fog"
   },
   {
-    "id":751,
-    "description":"sand ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":751,
+   "description":"sand",
+   "icon-day":"wi-sandstorm",
+   "icon-night":"wi-sandstorm"
   },
   {
-    "id":761,
-    "description":"dust ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":761,
+   "description":"dust",
+   "icon-day":"wi-dust",
+   "icon-night":"wi-dust"
   },
   {
-    "id":762,
-    "description":"volcanic ash ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":762,
+   "description":"volcanic ash",
+   "icon-day":"wi-volcano",
+   "icon-night":"wi-volcano"
   },
   {
-    "id":771,
-    "description":"squalls ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":771,
+   "description":"squalls",
+   "icon-day":"wi-strong-wind",
+   "icon-night":"wi-strong-wind"
   },
   {
-    "id":781,
-    "description":"tornado ",
-    "icon-day":"file:50d.png ",
-    "icon-night":""
+   "id":781,
+   "description":"tornado",
+   "icon-day":"wi-tornado",
+   "icon-night":"wi-tornado"
   },
   {
-    "id":900,
-    "description":"tornado ",
-    "icon-day":"",
-    "icon-night":""
+   "id":900,
+   "description":"tornado",
+   "icon-day":"wi-tornado",
+   "icon-night":"wi-tornado"
   },
   {
-    "id":901,
-    "description":"tropical storm ",
-    "icon-day":"",
-    "icon-night":""
+   "id":901,
+   "description":"tropical storm",
+   "icon-day":"wi-rain-wind",
+   "icon-night":"wi-rain-wind"
   },
   {
-    "id":902,
-    "description":"hurricane ",
-    "icon-day":"",
-    "icon-night":""
+   "id":902,
+   "description":"hurricane",
+   "icon-day":"wi-hurricane",
+   "icon-night":"wi-hurricane"
   },
   {
-    "id":903,
-    "description":"cold ",
-    "icon-day":"",
-    "icon-night":""
+   "id":903,
+   "description":"cold",
+   "icon-day":"wi-snowflake-cold",
+   "icon-night":"wi-snowflake-cold"
   },
   {
-    "id":904,
-    "description":"hot ",
-    "icon-day":"",
-    "icon-night":""
+   "id":904,
+   "description":"hot",
+   "icon-day":"wi-hot",
+   "icon-night":"wi-hot"
   },
   {
-    "id":905,
-    "description":"windy ",
-    "icon-day":"",
-    "icon-night":""
+   "id":905,
+   "description":"windy",
+   "icon-day":"wi-windy",
+   "icon-night":"wi-night-cloudy-windy"
   },
   {
-    "id":906,
-    "description":"hail ",
-    "icon-day":"",
-    "icon-night":""
+   "id":906,
+   "description":"hail",
+   "icon-day":"wi-day-hail",
+   "icon-night":"wi-night-hail"
   },
   {
-    "id":951,
-    "description":"calm ",
-    "icon-day":"",
-    "icon-night":""
+   "id":951,
+   "description":"calm",
+   "icon-day":"wi-na",
+   "icon-night":"wi-na"
   },
   {
-    "id":952,
-    "description":"light breeze ",
-    "icon-day":"",
-    "icon-night":""
+   "id":952,
+   "description":"light breeze",
+   "icon-day":"wi-na",
+   "icon-night":"wi-na"
   },
   {
-    "id":953,
-    "description":"gentle breeze ",
-    "icon-day":"",
-    "icon-night":""
+   "id":953,
+   "description":"gentle breeze",
+   "icon-day":"wi-na",
+   "icon-night":"wi-na"
   },
   {
-    "id":954,
-    "description":"moderate breeze ",
-    "icon-day":"",
-    "icon-night":""
+   "id":954,
+   "description":"moderate breeze",
+   "icon-day":"wi-na",
+   "icon-night":"wi-na"
   },
   {
-    "id":955,
-    "description":"fresh breeze ",
-    "icon-day":"",
-    "icon-night":""
+   "id":955,
+   "description":"fresh breeze",
+   "icon-day":"wi-na",
+   "icon-night":"wi-na"
   },
   {
-    "id":956,
-    "description":"strong breeze ",
-    "icon-day":"",
-    "icon-night":""
+   "id":956,
+   "description":"strong breeze",
+   "icon-day":"wi-windy",
+   "icon-night":"wi-windy"
   },
   {
-    "id":957,
-    "description":"high wind, near gale ",
-    "icon-day":"",
-    "icon-night":""
+   "id":957,
+   "description":"high wind, near gale",
+   "icon-day":"wi-strong-wind",
+   "icon-night":"wi-strong-wind"
   },
   {
-    "id":958,
-    "description":"gale ",
-    "icon-day":"",
-    "icon-night":""
+   "id":958,
+   "description":"gale",
+   "icon-day":"wi-strong-wind",
+   "icon-night":"wi-strong-wind"
   },
   {
-    "id":959,
-    "description":"severe gale ",
-    "icon-day":"",
-    "icon-night":""
+   "id":959,
+   "description":"severe gale",
+   "icon-day":"wi-strong-wind",
+   "icon-night":"wi-strong-wind"
   },
   {
-    "id":960,
-    "description":"storm ",
-    "icon-day":"",
-    "icon-night":""
+   "id":960,
+   "description":"storm",
+   "icon-day":"wi-day-thunderstorm",
+   "icon-night":"wi-night-alt-thunderstorm"
   },
   {
-    "id":961,
-    "description":"violent storm ",
-    "icon-day":"",
-    "icon-night":""
+   "id":961,
+   "description":"violent storm",
+   "icon-day":"wi-day-thunderstorm",
+   "icon-night":"wi-night-alt-thunderstorm"
   },
   {
-    "id":962,
-    "description":"hurricane ",
-    "icon-day":"",
-    "icon-night":""
+   "id":962,
+   "description":"hurricane",
+   "icon-day":"wi-hurricane",
+   "icon-night":"wi-hurricane"
   }
 ]

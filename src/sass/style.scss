@@ -40,13 +40,13 @@ $mist: #917083;
 $fog: #917083;
 $rain: #688571;
 $drizzle: #688571;
-$storm: #CD6B00;
+$storm: #440946;
 $thunderstorm: $storm;
 $snow: silver;
 $sleet: $snow;
 $tornado: $storm;
 $hurricane: $storm;
-$hot: #A5005D;
+$hot: #CD6B00;
 $cold: $snow;
 // windy
 
@@ -126,31 +126,122 @@ body {
 
 body[class*="clear"] {
   background-color: $clear;
+  background-image: url('http://learning.site/local-weather/assets/images/clear.jpg');
 }
 
 body[class*="clouds"] {
   background-color: $clouds;
+  background-image: url('http://learning.site/local-weather/assets/images/clouds.jpg');
 }
 
-// $clear: #005D81;
-// $clouds: #596A71;
-// $mist: #917083;
-// $fog: #917083
-// $rain: #688571;
-// $drizzle: #688571;
-// $storm: #CD6B00;
-// $thunderstorm: $storm;
-// $snow: silver;
-// $sleet: $snow;
-// $tornado: $storm;
-// $hurricane: $storm;
-// $hot: #A5005D;
-// $cold: $snow;
-// windy
+body[class*="mist"],
+body[class*="fog"] {
+  background-color: $mist;
+  background-image: url('http://learning.site/local-weather/assets/images/fog.jpg');
+  color: $primary-dark;
+  h1,
+  h2 {
+    color: $primary-dark;
+  }
+  #weather-toggle .wi-fahrenheit,
+  #weather-toggle .wi-celsius {
+    color: $white;
+  }
+  #weather-toggle .active .wi-fahrenheit,
+  #weather-toggle .active .wi-celsius {
+    color: $primary-dark;
+  }
+}
 
-@media only screen and (min-width : 768px) {
-  body {
-    //background-image: url(http://sandbox.misfist.com/quote-generator/assets/images/oscar_the_grouch.jpg);
+body[class*="rain"],
+body[class*="drizzle"] {
+  background-color: $rain;
+  background-image: url('http://learning.site/local-weather/assets/images/rain.jpg');
+
+  color: $primary-dark;
+  h1,
+  h2 {
+    color: $primary-dark;
+  }
+  #weather-toggle .wi-fahrenheit,
+  #weather-toggle .wi-celsius {
+    color: $white;
+  }
+  #weather-toggle .active .wi-fahrenheit,
+  #weather-toggle .active .wi-celsius {
+    color: $primary-dark;
+  }
+}
+
+body[class*="storm"] {
+  background-color: $storm;
+}
+
+body[class*="thunderstorm"] {
+  background-color: $storm;
+  background-image: url('http://learning.site/local-weather/assets/images/thunder.jpg');
+  color: $primary-dark;
+  h1,
+  h2 {
+    color: $primary-dark;
+  }
+  #weather-toggle .wi-fahrenheit,
+  #weather-toggle .wi-celsius {
+    color: $white;
+  }
+  #weather-toggle .active .wi-fahrenheit,
+  #weather-toggle .active .wi-celsius {
+    color: $primary-dark;
+  }
+}
+
+body[class*="snow"],
+body[class*="sleet"] {
+  background-color: $snow;
+  background-image: url('http://learning.site/local-weather/assets/images/snow.jpg');
+  color: $primary-dark;
+  h1,
+  h2 {
+    color: $primary-dark;
+  }
+  #weather-toggle .wi-fahrenheit,
+  #weather-toggle .wi-celsius {
+    color: $white;
+  }
+  #weather-toggle .active .wi-fahrenheit,
+  #weather-toggle .active .wi-celsius {
+    color: $primary-dark;
+  }
+}
+
+body[class*="tornado"] {
+  background-color: $storm;
+}
+
+body[class*="hurricane"] {
+  background-color: $storm;
+}
+
+body[class*="hot"] {
+  background-color: $hot;
+  background-image: url('http://learning.site/local-weather/assets/images/hot.png');
+}
+
+body[class*="cold"] {
+  background-color: $snow;
+  background-image: url('http://learning.site/local-weather/assets/images/cold.jpg');
+  color: $primary-dark;
+  h1,
+  h2 {
+    color: $primary-dark;
+  }
+  #weather-toggle .wi-fahrenheit,
+  #weather-toggle .wi-celsius {
+    color: $white;
+  }
+  #weather-toggle .active .wi-fahrenheit,
+  #weather-toggle .active .wi-celsius {
+    color: $primary-dark;
   }
 }
 
@@ -162,22 +253,21 @@ h2 {
 }
 
 h1 {
-  font-size: 28px;
-  //font-weight: bold;
+  font-size: 46px;
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 28px;
   font-weight: 300;
 }
 
 @media only screen and (min-width : 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 85px;
   }
 
   h2 {
-    font-size: 85px;
+    font-size: 40px;
   }
 }
 
@@ -185,8 +275,7 @@ section {
   @extend %clearfix;
   width: 100%;
   min-height: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2%;
   min-height: 700px;
   background-position: top;
   background-size: auto 100%;
@@ -270,7 +359,15 @@ section {
 
 }
 
-#weather-info {}
+#weather-info {
+  label {
+    font-size: 35px;
+  }
+}
+
+#current-conditions {
+  padding: 5px 0 10px 0;
+}
 
 footer {
   @extend %clearfix;
@@ -346,9 +443,6 @@ label {
   display: block;
   margin: 0 auto 10px auto;
 
-  // label {
-    
-  // }
   .wi-fahrenheit,
   .wi-celsius {
     display: inline-block;
@@ -366,7 +460,6 @@ label {
     color: $white;
     cursor: inherit;
   }
-
 
 }
 

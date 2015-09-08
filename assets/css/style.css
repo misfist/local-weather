@@ -61,33 +61,138 @@ body {
   background-color: #005D81; }
 
 body[class*="clear"] {
-  background-color: #005D81; }
+  background-color: #005D81;
+  background-image: url("http://learning.site/local-weather/assets/images/clear.jpg"); }
 
 body[class*="clouds"] {
-  background-color: #596A71; }
+  background-color: #596A71;
+  background-image: url("http://learning.site/local-weather/assets/images/clouds.jpg"); }
+
+body[class*="mist"],
+body[class*="fog"] {
+  background-color: #917083;
+  background-image: url("http://learning.site/local-weather/assets/images/fog.jpg");
+  color: #0B3444; }
+  body[class*="mist"] h1,
+  body[class*="mist"] h2,
+  body[class*="fog"] h1,
+  body[class*="fog"] h2 {
+    color: #0B3444; }
+  body[class*="mist"] #weather-toggle .wi-fahrenheit,
+  body[class*="mist"] #weather-toggle .wi-celsius,
+  body[class*="fog"] #weather-toggle .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .wi-celsius {
+    color: #fff; }
+  body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="mist"] #weather-toggle .active .wi-celsius,
+  body[class*="fog"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .active .wi-celsius {
+    color: #0B3444; }
+
+body[class*="rain"],
+body[class*="drizzle"] {
+  background-color: #688571;
+  background-image: url("http://learning.site/local-weather/assets/images/rain.jpg");
+  color: #0B3444; }
+  body[class*="rain"] h1,
+  body[class*="rain"] h2,
+  body[class*="drizzle"] h1,
+  body[class*="drizzle"] h2 {
+    color: #0B3444; }
+  body[class*="rain"] #weather-toggle .wi-fahrenheit,
+  body[class*="rain"] #weather-toggle .wi-celsius,
+  body[class*="drizzle"] #weather-toggle .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .wi-celsius {
+    color: #fff; }
+  body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="rain"] #weather-toggle .active .wi-celsius,
+  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .active .wi-celsius {
+    color: #0B3444; }
+
+body[class*="storm"] {
+  background-color: #440946; }
+
+body[class*="thunderstorm"] {
+  background-color: #440946;
+  background-image: url("http://learning.site/local-weather/assets/images/thunder.jpg");
+  color: #0B3444; }
+  body[class*="thunderstorm"] h1,
+  body[class*="thunderstorm"] h2 {
+    color: #0B3444; }
+  body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit,
+  body[class*="thunderstorm"] #weather-toggle .wi-celsius {
+    color: #fff; }
+  body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="thunderstorm"] #weather-toggle .active .wi-celsius {
+    color: #0B3444; }
+
+body[class*="snow"],
+body[class*="sleet"] {
+  background-color: silver;
+  background-image: url("http://learning.site/local-weather/assets/images/snow.jpg");
+  color: #0B3444; }
+  body[class*="snow"] h1,
+  body[class*="snow"] h2,
+  body[class*="sleet"] h1,
+  body[class*="sleet"] h2 {
+    color: #0B3444; }
+  body[class*="snow"] #weather-toggle .wi-fahrenheit,
+  body[class*="snow"] #weather-toggle .wi-celsius,
+  body[class*="sleet"] #weather-toggle .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .wi-celsius {
+    color: #fff; }
+  body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="snow"] #weather-toggle .active .wi-celsius,
+  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .active .wi-celsius {
+    color: #0B3444; }
+
+body[class*="tornado"] {
+  background-color: #440946; }
+
+body[class*="hurricane"] {
+  background-color: #440946; }
+
+body[class*="hot"] {
+  background-color: #CD6B00;
+  background-image: url("http://learning.site/local-weather/assets/images/hot.png"); }
+
+body[class*="cold"] {
+  background-color: silver;
+  background-image: url("http://learning.site/local-weather/assets/images/cold.jpg");
+  color: #0B3444; }
+  body[class*="cold"] h1,
+  body[class*="cold"] h2 {
+    color: #0B3444; }
+  body[class*="cold"] #weather-toggle .wi-fahrenheit,
+  body[class*="cold"] #weather-toggle .wi-celsius {
+    color: #fff; }
+  body[class*="cold"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="cold"] #weather-toggle .active .wi-celsius {
+    color: #0B3444; }
 
 h1,
 h2 {
   margin: 10px 0; }
 
 h1 {
-  font-size: 28px; }
+  font-size: 46px; }
 
 h2 {
-  font-size: 46px;
+  font-size: 28px;
   font-weight: 300; }
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 40px; }
+    font-size: 85px; }
   h2 {
-    font-size: 85px; } }
+    font-size: 40px; } }
 
 section {
   width: 100%;
   min-height: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2%;
   min-height: 700px;
   background-position: top;
   background-size: auto 100%;
@@ -130,6 +235,12 @@ section {
       content: 'Low: '; }
     #home .forecast #low:after {
       content: '°'; }
+
+#weather-info label {
+  font-size: 35px; }
+
+#current-conditions {
+  padding: 5px 0 10px 0; }
 
 footer {
   background-color: #0B3444;
