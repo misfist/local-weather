@@ -257,7 +257,6 @@ section {
 }
 
 #weather-info {
-  background: transparentize($primary-light, .7);
   label {
     font-size: 35px;
   }
@@ -329,7 +328,7 @@ label {
 }
 
 .well {
-  background-color: transparent;
+  background: transparentize($primary-light, .7);
   border-radius: 0;
   border-right: none;
   border-left: none;
