@@ -50,8 +50,8 @@
           </div>
           <h1 id="current-temp">{{main.temp}} <i class="wi"></i>{{F/C}}</h1>
           <div id="weather-toggle"><label class="hidden">Switch</label> 
-            <a id="imperial"><i class="wi wi-fahrenheit"></i> <span class="hidden">Fahrenheit</span></a>
-            <a id="metric"><i class="wi wi-celsius"></i> <span class="hidden">Celsius</span></a>
+            <a id="imperial"><i class="wi wi-fahrenheit" data-toggle="tooltip" title="Switch temperature units to Fahrenheit"></i> <span class="hidden">Fahrenheit</span></a>
+            <a id="metric"><i class="wi wi-celsius" data-toggle="tooltip" title="Switch temperature units to Celsius"></i> <span class="hidden">Celsius</span></a>
           </div>
           <div class="forecast">
             <span id="high">{{main.temp_max}}</span>
@@ -61,13 +61,13 @@
         <article id="weather-info" class="row">
           <ul >
             <li class="col-xs-12 col-sm-4 well" id="sunrise">
-              <label><i class="wi wi-sunrise"></i></label> 
+              <label data-toggle="tooltip" title="Sunrise"><i class="wi wi-sunrise"></i></label> 
               <span class="localtime">{{weather.sys.sunrise}}</span></li>
             <li class="col-xs-12 col-sm-4 well" id="sunset">
-              <label><i class="wi wi-sunset"></i></label> 
+              <label data-toggle="tooltip" title="Sunset"><i class="wi wi-sunset"></i></label> 
               <span class="localtime">{{weather.sys.sunset}}</span></li>
             <li class="col-xs-12 col-sm-4 well" id="wind">
-              <label><i class="wi wi-strong-wind"></i></label> 
+              <label data-toggle="tooltip" title="Wind"><i class="wi wi-strong-wind"></i></label> 
               <span class="wind">{{wind.speed}}</span></li>
           </ul>
         </article>
@@ -87,6 +87,7 @@
       </div>
     </footer>
       <script src='assets/vendor/jquery/dist/jquery.min.js'></script>
+      <script src='assets/vendor/bootstrap/dist/js/bootstrap.min.js'></script>
       <script src="assets/js/main.js"></script>
   </body>
 </html>
