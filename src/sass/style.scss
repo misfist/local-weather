@@ -126,18 +126,18 @@ body {
 
 body[class*="clear"] {
   background-color: $clear;
-  background-image: url('http://learning.site/local-weather/assets/images/clear.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/clear.jpg');
 }
 
 body[class*="clouds"] {
   background-color: $clouds;
-  background-image: url('http://learning.site/local-weather/assets/images/clouds.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/clouds.jpg');
 }
 
 body[class*="mist"],
 body[class*="fog"] {
   background-color: $mist;
-  background-image: url('http://learning.site/local-weather/assets/images/fog.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/fog.jpg');
   color: $primary-dark;
   h1,
   h2 {
@@ -156,7 +156,7 @@ body[class*="fog"] {
 body[class*="rain"],
 body[class*="drizzle"] {
   background-color: $rain;
-  background-image: url('http://learning.site/local-weather/assets/images/rain.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/rain.jpg');
 
   color: $primary-dark;
   h1,
@@ -179,7 +179,7 @@ body[class*="storm"] {
 
 body[class*="thunderstorm"] {
   background-color: $storm;
-  background-image: url('http://learning.site/local-weather/assets/images/thunder.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/thunder.jpg');
   color: $primary-dark;
   h1,
   h2 {
@@ -198,7 +198,7 @@ body[class*="thunderstorm"] {
 body[class*="snow"],
 body[class*="sleet"] {
   background-color: $snow;
-  background-image: url('http://learning.site/local-weather/assets/images/snow.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/snow.jpg');
   color: $primary-dark;
   h1,
   h2 {
@@ -224,12 +224,12 @@ body[class*="hurricane"] {
 
 body[class*="hot"] {
   background-color: $hot;
-  background-image: url('http://learning.site/local-weather/assets/images/hot.png');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/hot.png');
 }
 
 body[class*="cold"] {
   background-color: $snow;
-  background-image: url('http://learning.site/local-weather/assets/images/cold.jpg');
+  background-image: url('http://sandbox.misfist.com/local-weather/assets/images/cold.jpg');
   color: $primary-dark;
   h1,
   h2 {
