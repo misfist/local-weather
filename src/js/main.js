@@ -1,3 +1,6 @@
+/*jslint white: true */
+
+
 // STEPS
 
 // look up zip code based on ip
@@ -54,7 +57,7 @@
 
 $(document).ready(function() {
 
-    console.log('main.js');
+    // console.log('main.js');
     
     // Instantiate Bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip();
@@ -112,7 +115,7 @@ $(document).ready(function() {
             })
             .done( function( weather ) {
 
-                console.log( weather );
+                // console.log( weather );
 
                 // Add weather.main as body class
                 var weatherClass = weather.weather[0].description.split(' ').join('-');
@@ -122,8 +125,8 @@ $(document).ready(function() {
                 var sunrise = getLocalDate( weather.sys.sunrise );
                 var sunset = getLocalDate( weather.sys.sunset );
 
-                console.log( sunrise );
-                console.log( sunset );
+                // console.log( sunrise );
+                // console.log( sunset );
 
                 // Add body classes
                 $( 'body' ).addClass( weatherClass ).addClass( units );
@@ -145,7 +148,7 @@ $(document).ready(function() {
             .fail(function( jqxhr, textStatus, error ) {
 
                 var err = textStatus + ", " + error;
-                console.log( "Request Failed: " + err );
+                console.error( "Request Failed: " + err );
 
             });
 
@@ -164,7 +167,7 @@ $(document).ready(function() {
     .fail(function( jqxhr, textStatus, error ) {
 
         var err = textStatus + ", " + error;
-        console.log( "Request Failed: " + err );
+        console.error( "Request Failed: " + err );
 
     });
 
