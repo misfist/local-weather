@@ -27,6 +27,9 @@
     };
   })(jQuery);
 }).call(this);
+/*jslint white: true */
+
+
 // STEPS
 
 // look up zip code based on ip
@@ -83,13 +86,13 @@
 
 $(document).ready(function() {
 
-    console.log('main.js');
+    // console.log('main.js');
     
     // Instantiate Bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
     // API key for api.openweathermap.org
-    const APIKEY = 'ae5ad98abb4a0a8b51d04136004b8061';
+    const APIKEY = 'af7142e69f8d39cab74a170b9c4aa9bf';
 
     // IP lookup service URL
     var ipUrl = 'http://ip-api.com/json/';
@@ -137,11 +140,11 @@ $(document).ready(function() {
                 lat: data.lat,
                 lon: data.lon,
                 units: units,
-                APIKEY: APIKEY
+                APPID: APIKEY
             })
             .done( function( weather ) {
 
-                console.log( weather );
+                // console.log( weather );
 
                 // Add weather.main as body class
                 var weatherClass = weather.weather[0].description.split(' ').join('-');
@@ -151,8 +154,8 @@ $(document).ready(function() {
                 var sunrise = getLocalDate( weather.sys.sunrise );
                 var sunset = getLocalDate( weather.sys.sunset );
 
-                console.log( sunrise );
-                console.log( sunset );
+                // console.log( sunrise );
+                // console.log( sunset );
 
                 // Add body classes
                 $( 'body' ).addClass( weatherClass ).addClass( units );
@@ -174,7 +177,7 @@ $(document).ready(function() {
             .fail(function( jqxhr, textStatus, error ) {
 
                 var err = textStatus + ", " + error;
-                console.log( "Request Failed: " + err );
+                console.error( "Request Failed: " + err );
 
             });
 
@@ -193,7 +196,7 @@ $(document).ready(function() {
     .fail(function( jqxhr, textStatus, error ) {
 
         var err = textStatus + ", " + error;
-        console.log( "Request Failed: " + err );
+        console.error( "Request Failed: " + err );
 
     });
 

@@ -63,7 +63,7 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
     // API key for api.openweathermap.org
-    const APIKEY = 'ae5ad98abb4a0a8b51d04136004b8061';
+    const APIKEY = 'af7142e69f8d39cab74a170b9c4aa9bf';
 
     // IP lookup service URL
     var ipUrl = 'http://ip-api.com/json/';
@@ -111,7 +111,7 @@ $(document).ready(function() {
                 lat: data.lat,
                 lon: data.lon,
                 units: units,
-                APIKEY: APIKEY
+                APPID: APIKEY
             })
             .done( function( weather ) {
 
