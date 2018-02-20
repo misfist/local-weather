@@ -57,44 +57,26 @@ body[class*="fog"], body[class*="rain"],
 body[class*="drizzle"], body[class*="thunderstorm"], body[class*="snow"],
 body[class*="sleet"], body[class*="cold"] {
   color: #0B3444; }
-  body[class*="clouds"] h1,
-  body[class*="mist"] h1,
-  body[class*="fog"] h1,
-  body[class*="rain"] h1,
-  body[class*="drizzle"] h1,
-  body[class*="thunderstorm"] h1,
-  body[class*="snow"] h1,
-  body[class*="sleet"] h1,
-  body[class*="cold"] h1,
-  body[class*="clouds"] h2, body[class*="mist"] h2,
+  body[class*="clouds"] h1, body[class*="mist"] h1,
+  body[class*="fog"] h1, body[class*="rain"] h1,
+  body[class*="drizzle"] h1, body[class*="thunderstorm"] h1, body[class*="snow"] h1,
+  body[class*="sleet"] h1, body[class*="cold"] h1, body[class*="clouds"] h2, body[class*="mist"] h2,
   body[class*="fog"] h2, body[class*="rain"] h2,
   body[class*="drizzle"] h2, body[class*="thunderstorm"] h2, body[class*="snow"] h2,
   body[class*="sleet"] h2, body[class*="cold"] h2 {
     color: #0B3444; }
-  body[class*="clouds"] #weather-toggle .wi-fahrenheit,
-  body[class*="mist"] #weather-toggle .wi-fahrenheit,
-  body[class*="fog"] #weather-toggle .wi-fahrenheit,
-  body[class*="rain"] #weather-toggle .wi-fahrenheit,
-  body[class*="drizzle"] #weather-toggle .wi-fahrenheit,
-  body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit,
-  body[class*="snow"] #weather-toggle .wi-fahrenheit,
-  body[class*="sleet"] #weather-toggle .wi-fahrenheit,
-  body[class*="cold"] #weather-toggle .wi-fahrenheit,
-  body[class*="clouds"] #weather-toggle .wi-celsius, body[class*="mist"] #weather-toggle .wi-celsius,
+  body[class*="clouds"] #weather-toggle .wi-fahrenheit, body[class*="mist"] #weather-toggle .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .wi-fahrenheit, body[class*="rain"] #weather-toggle .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .wi-fahrenheit, body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit, body[class*="snow"] #weather-toggle .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .wi-fahrenheit, body[class*="cold"] #weather-toggle .wi-fahrenheit, body[class*="clouds"] #weather-toggle .wi-celsius, body[class*="mist"] #weather-toggle .wi-celsius,
   body[class*="fog"] #weather-toggle .wi-celsius, body[class*="rain"] #weather-toggle .wi-celsius,
   body[class*="drizzle"] #weather-toggle .wi-celsius, body[class*="thunderstorm"] #weather-toggle .wi-celsius, body[class*="snow"] #weather-toggle .wi-celsius,
   body[class*="sleet"] #weather-toggle .wi-celsius, body[class*="cold"] #weather-toggle .wi-celsius {
     color: #fff; }
-  body[class*="clouds"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="fog"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="cold"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="clouds"] #weather-toggle .active .wi-celsius, body[class*="mist"] #weather-toggle .active .wi-celsius,
+  body[class*="clouds"] #weather-toggle .active .wi-fahrenheit, body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .active .wi-fahrenheit, body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit, body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit, body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit, body[class*="cold"] #weather-toggle .active .wi-fahrenheit, body[class*="clouds"] #weather-toggle .active .wi-celsius, body[class*="mist"] #weather-toggle .active .wi-celsius,
   body[class*="fog"] #weather-toggle .active .wi-celsius, body[class*="rain"] #weather-toggle .active .wi-celsius,
   body[class*="drizzle"] #weather-toggle .active .wi-celsius, body[class*="thunderstorm"] #weather-toggle .active .wi-celsius, body[class*="snow"] #weather-toggle .active .wi-celsius,
   body[class*="sleet"] #weather-toggle .active .wi-celsius, body[class*="cold"] #weather-toggle .active .wi-celsius {
@@ -193,8 +175,7 @@ footer {
   footer a,
   footer a:link {
     color: #fff; }
-    footer a:hover,
-    footer a:focus,
+    footer a:hover, footer a:focus,
     footer a:link:hover,
     footer a:link:focus {
       color: #fff; }
@@ -242,8 +223,7 @@ label {
     font-size: 45px;
     color: #0B3444;
     cursor: pointer; }
-    #weather-toggle .wi-fahrenheit:before,
-    #weather-toggle .wi-fahrenheit:after,
+    #weather-toggle .wi-fahrenheit:before, #weather-toggle .wi-fahrenheit:after,
     #weather-toggle .wi-celsius:before,
     #weather-toggle .wi-celsius:after {
       margin: 5px; }
@@ -270,33 +250,33 @@ label {
 
 body[class*="clear"] {
   background-color: #005D81;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/clear.jpg"); }
+  background-image: url("../images/clear.jpg"); }
 
 body[class*="clouds"] {
   background-color: #596A71;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/clouds.jpg"); }
+  background-image: url("../images/clouds.jpg"); }
 
 body[class*="mist"],
 body[class*="fog"] {
   background-color: #917083;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/fog.jpg"); }
+  background-image: url("../images/fog.jpg"); }
 
 body[class*="rain"],
 body[class*="drizzle"] {
   background-color: #688571;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/rain.jpg"); }
+  background-image: url("../images/rain.jpg"); }
 
 body[class*="storm"] {
   background-color: #440946; }
 
 body[class*="thunderstorm"] {
   background-color: #440946;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/thunder.jpg"); }
+  background-image: url("../images/thunder.jpg"); }
 
 body[class*="snow"],
 body[class*="sleet"] {
   background-color: silver;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/snow.jpg"); }
+  background-image: url("../images/snow.jpg"); }
 
 body[class*="tornado"] {
   background-color: #440946; }
@@ -306,8 +286,8 @@ body[class*="hurricane"] {
 
 body[class*="hot"] {
   background-color: #CD6B00;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/hot.png"); }
+  background-image: url("../images/hot.png"); }
 
 body[class*="cold"] {
   background-color: silver;
-  background-image: url("http://sandbox.misfist.com/local-weather/assets/images/cold.jpg"); }
+  background-image: url("../images/cold.jpg"); }
