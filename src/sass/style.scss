@@ -168,6 +168,11 @@ h2 {
   }
 }
 
+#current-conditions {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
 section {
   @extend %clearfix;
   width: 100%;
@@ -264,6 +269,11 @@ section {
 
 #current-conditions {
   padding: 5px 0 10px 0;
+}
+
+#localtime {
+  padding: 1rem 0 1.5rem 0;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -389,63 +399,81 @@ label {
 }
 
 // Weather-specific styles
+body,
+#main {
+  background-size: cover;
+}
 
-body[class*="clear"] {
+body[class*="clear"],
+#main[class*="clear"] {
   background-color: $clear;
   background-image: url('../images/clear.jpg');
 }
 
-body[class*="clouds"] {
+body[class*="clouds"],
+#mail[class*="clouds"] {
   background-color: $clouds;
   background-image: url('../images/clouds.jpg');
   @extend %light-background;
 }
 
 body[class*="mist"],
-body[class*="fog"] {
+body[class*="fog"],
+#main[class*="mist"],
+#main[class*="fog"] {
   background-color: $mist;
   background-image: url('../images/fog.jpg');
   @extend %light-background;
 }
 
 body[class*="rain"],
-body[class*="drizzle"] {
+body[class*="drizzle"],
+#main[class*="rain"],
+#main[class*="drizzle"] {
   background-color: $rain;
   background-image: url('../images/rain.jpg');
   @extend %light-background;
 }
 
-body[class*="storm"] {
+body[class*="storm"],
+#main[class*="storm"] {
   background-color: $storm;
 }
 
-body[class*="thunderstorm"] {
+body[class*="thunderstorm"],
+#main[class*="thunderstorm"] {
   background-color: $storm;
   background-image: url('../images/thunder.jpg');
   @extend %light-background;
 }
 
 body[class*="snow"],
-body[class*="sleet"] {
+body[class*="sleet"],
+#main[class*="snow"],
+#main[class*="sleet"] {
   background-color: $snow;
   background-image: url('../images/snow.jpg');
   @extend %light-background;
 }
 
-body[class*="tornado"] {
+body[class*="tornado"],
+#main[class*="tornado"] {
   background-color: $storm;
 }
 
-body[class*="hurricane"] {
+body[class*="hurricane"],
+#main[class*="hurricane"] {
   background-color: $storm;
 }
 
-body[class*="hot"] {
+body[class*="hot"],
+#main[class*="hot"] {
   background-color: $hot;
   background-image: url('../images/hot.png');
 }
 
-body[class*="cold"] {
+body[class*="cold"],
+#main[class*="cold"] {
   background-color: $snow;
   background-image: url('../images/cold.jpg');
   @extend %light-background;

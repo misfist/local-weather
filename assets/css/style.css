@@ -52,34 +52,97 @@ section:after, .container:after, footer:after {
   background: rgba(170, 192, 200, 0.3);
   border-radius: 10px; }
 
-body[class*="clouds"], body[class*="mist"],
-body[class*="fog"], body[class*="rain"],
-body[class*="drizzle"], body[class*="thunderstorm"], body[class*="snow"],
-body[class*="sleet"], body[class*="cold"] {
+body[class*="clouds"],
+#mail[class*="clouds"], body[class*="mist"],
+body[class*="fog"],
+#main[class*="mist"],
+#main[class*="fog"], body[class*="rain"],
+body[class*="drizzle"],
+#main[class*="rain"],
+#main[class*="drizzle"], body[class*="thunderstorm"],
+#main[class*="thunderstorm"], body[class*="snow"],
+body[class*="sleet"],
+#main[class*="snow"],
+#main[class*="sleet"], body[class*="cold"],
+#main[class*="cold"] {
   color: #0B3444; }
-  body[class*="clouds"] h1, body[class*="mist"] h1,
-  body[class*="fog"] h1, body[class*="rain"] h1,
-  body[class*="drizzle"] h1, body[class*="thunderstorm"] h1, body[class*="snow"] h1,
-  body[class*="sleet"] h1, body[class*="cold"] h1, body[class*="clouds"] h2, body[class*="mist"] h2,
-  body[class*="fog"] h2, body[class*="rain"] h2,
-  body[class*="drizzle"] h2, body[class*="thunderstorm"] h2, body[class*="snow"] h2,
-  body[class*="sleet"] h2, body[class*="cold"] h2 {
+  body[class*="clouds"] h1,
+  #mail[class*="clouds"] h1, body[class*="mist"] h1,
+  body[class*="fog"] h1,
+  #main[class*="mist"] h1,
+  #main[class*="fog"] h1, body[class*="rain"] h1,
+  body[class*="drizzle"] h1,
+  #main[class*="rain"] h1,
+  #main[class*="drizzle"] h1, body[class*="thunderstorm"] h1,
+  #main[class*="thunderstorm"] h1, body[class*="snow"] h1,
+  body[class*="sleet"] h1,
+  #main[class*="snow"] h1,
+  #main[class*="sleet"] h1, body[class*="cold"] h1,
+  #main[class*="cold"] h1, body[class*="clouds"] h2,
+  #mail[class*="clouds"] h2, body[class*="mist"] h2,
+  body[class*="fog"] h2,
+  #main[class*="mist"] h2,
+  #main[class*="fog"] h2, body[class*="rain"] h2,
+  body[class*="drizzle"] h2,
+  #main[class*="rain"] h2,
+  #main[class*="drizzle"] h2, body[class*="thunderstorm"] h2,
+  #main[class*="thunderstorm"] h2, body[class*="snow"] h2,
+  body[class*="sleet"] h2,
+  #main[class*="snow"] h2,
+  #main[class*="sleet"] h2, body[class*="cold"] h2,
+  #main[class*="cold"] h2 {
     color: #0B3444; }
-  body[class*="clouds"] #weather-toggle .wi-fahrenheit, body[class*="mist"] #weather-toggle .wi-fahrenheit,
-  body[class*="fog"] #weather-toggle .wi-fahrenheit, body[class*="rain"] #weather-toggle .wi-fahrenheit,
-  body[class*="drizzle"] #weather-toggle .wi-fahrenheit, body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit, body[class*="snow"] #weather-toggle .wi-fahrenheit,
-  body[class*="sleet"] #weather-toggle .wi-fahrenheit, body[class*="cold"] #weather-toggle .wi-fahrenheit, body[class*="clouds"] #weather-toggle .wi-celsius, body[class*="mist"] #weather-toggle .wi-celsius,
-  body[class*="fog"] #weather-toggle .wi-celsius, body[class*="rain"] #weather-toggle .wi-celsius,
-  body[class*="drizzle"] #weather-toggle .wi-celsius, body[class*="thunderstorm"] #weather-toggle .wi-celsius, body[class*="snow"] #weather-toggle .wi-celsius,
-  body[class*="sleet"] #weather-toggle .wi-celsius, body[class*="cold"] #weather-toggle .wi-celsius {
+  body[class*="clouds"] #weather-toggle .wi-fahrenheit,
+  #mail[class*="clouds"] #weather-toggle .wi-fahrenheit, body[class*="mist"] #weather-toggle .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .wi-fahrenheit,
+  #main[class*="mist"] #weather-toggle .wi-fahrenheit,
+  #main[class*="fog"] #weather-toggle .wi-fahrenheit, body[class*="rain"] #weather-toggle .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .wi-fahrenheit,
+  #main[class*="rain"] #weather-toggle .wi-fahrenheit,
+  #main[class*="drizzle"] #weather-toggle .wi-fahrenheit, body[class*="thunderstorm"] #weather-toggle .wi-fahrenheit,
+  #main[class*="thunderstorm"] #weather-toggle .wi-fahrenheit, body[class*="snow"] #weather-toggle .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .wi-fahrenheit,
+  #main[class*="snow"] #weather-toggle .wi-fahrenheit,
+  #main[class*="sleet"] #weather-toggle .wi-fahrenheit, body[class*="cold"] #weather-toggle .wi-fahrenheit,
+  #main[class*="cold"] #weather-toggle .wi-fahrenheit, body[class*="clouds"] #weather-toggle .wi-celsius,
+  #mail[class*="clouds"] #weather-toggle .wi-celsius, body[class*="mist"] #weather-toggle .wi-celsius,
+  body[class*="fog"] #weather-toggle .wi-celsius,
+  #main[class*="mist"] #weather-toggle .wi-celsius,
+  #main[class*="fog"] #weather-toggle .wi-celsius, body[class*="rain"] #weather-toggle .wi-celsius,
+  body[class*="drizzle"] #weather-toggle .wi-celsius,
+  #main[class*="rain"] #weather-toggle .wi-celsius,
+  #main[class*="drizzle"] #weather-toggle .wi-celsius, body[class*="thunderstorm"] #weather-toggle .wi-celsius,
+  #main[class*="thunderstorm"] #weather-toggle .wi-celsius, body[class*="snow"] #weather-toggle .wi-celsius,
+  body[class*="sleet"] #weather-toggle .wi-celsius,
+  #main[class*="snow"] #weather-toggle .wi-celsius,
+  #main[class*="sleet"] #weather-toggle .wi-celsius, body[class*="cold"] #weather-toggle .wi-celsius,
+  #main[class*="cold"] #weather-toggle .wi-celsius {
     color: #fff; }
-  body[class*="clouds"] #weather-toggle .active .wi-fahrenheit, body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="fog"] #weather-toggle .active .wi-fahrenheit, body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit, body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit, body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
-  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit, body[class*="cold"] #weather-toggle .active .wi-fahrenheit, body[class*="clouds"] #weather-toggle .active .wi-celsius, body[class*="mist"] #weather-toggle .active .wi-celsius,
-  body[class*="fog"] #weather-toggle .active .wi-celsius, body[class*="rain"] #weather-toggle .active .wi-celsius,
-  body[class*="drizzle"] #weather-toggle .active .wi-celsius, body[class*="thunderstorm"] #weather-toggle .active .wi-celsius, body[class*="snow"] #weather-toggle .active .wi-celsius,
-  body[class*="sleet"] #weather-toggle .active .wi-celsius, body[class*="cold"] #weather-toggle .active .wi-celsius {
+  body[class*="clouds"] #weather-toggle .active .wi-fahrenheit,
+  #mail[class*="clouds"] #weather-toggle .active .wi-fahrenheit, body[class*="mist"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="fog"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="mist"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="fog"] #weather-toggle .active .wi-fahrenheit, body[class*="rain"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="drizzle"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="rain"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="drizzle"] #weather-toggle .active .wi-fahrenheit, body[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="thunderstorm"] #weather-toggle .active .wi-fahrenheit, body[class*="snow"] #weather-toggle .active .wi-fahrenheit,
+  body[class*="sleet"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="snow"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="sleet"] #weather-toggle .active .wi-fahrenheit, body[class*="cold"] #weather-toggle .active .wi-fahrenheit,
+  #main[class*="cold"] #weather-toggle .active .wi-fahrenheit, body[class*="clouds"] #weather-toggle .active .wi-celsius,
+  #mail[class*="clouds"] #weather-toggle .active .wi-celsius, body[class*="mist"] #weather-toggle .active .wi-celsius,
+  body[class*="fog"] #weather-toggle .active .wi-celsius,
+  #main[class*="mist"] #weather-toggle .active .wi-celsius,
+  #main[class*="fog"] #weather-toggle .active .wi-celsius, body[class*="rain"] #weather-toggle .active .wi-celsius,
+  body[class*="drizzle"] #weather-toggle .active .wi-celsius,
+  #main[class*="rain"] #weather-toggle .active .wi-celsius,
+  #main[class*="drizzle"] #weather-toggle .active .wi-celsius, body[class*="thunderstorm"] #weather-toggle .active .wi-celsius,
+  #main[class*="thunderstorm"] #weather-toggle .active .wi-celsius, body[class*="snow"] #weather-toggle .active .wi-celsius,
+  body[class*="sleet"] #weather-toggle .active .wi-celsius,
+  #main[class*="snow"] #weather-toggle .active .wi-celsius,
+  #main[class*="sleet"] #weather-toggle .active .wi-celsius, body[class*="cold"] #weather-toggle .active .wi-celsius,
+  #main[class*="cold"] #weather-toggle .active .wi-celsius {
     color: #0B3444; }
 
 html,
@@ -112,6 +175,10 @@ h2 {
     font-size: 85px; }
   h2 {
     font-size: 40px; } }
+
+#current-conditions {
+  font-size: 3rem;
+  text-transform: uppercase; }
 
 section {
   width: 100%;
@@ -165,6 +232,10 @@ section {
 
 #current-conditions {
   padding: 5px 0 10px 0; }
+
+#localtime {
+  padding: 1rem 0 1.5rem 0;
+  font-size: 1.5rem; }
 
 footer {
   background-color: #0B3444;
@@ -248,46 +319,64 @@ label {
 .tooltip .tooltip-inner {
   background-color: #0B3444; }
 
-body[class*="clear"] {
+body,
+#main {
+  background-size: cover; }
+
+body[class*="clear"],
+#main[class*="clear"] {
   background-color: #005D81;
   background-image: url("../images/clear.jpg"); }
 
-body[class*="clouds"] {
+body[class*="clouds"],
+#mail[class*="clouds"] {
   background-color: #596A71;
   background-image: url("../images/clouds.jpg"); }
 
 body[class*="mist"],
-body[class*="fog"] {
+body[class*="fog"],
+#main[class*="mist"],
+#main[class*="fog"] {
   background-color: #917083;
   background-image: url("../images/fog.jpg"); }
 
 body[class*="rain"],
-body[class*="drizzle"] {
+body[class*="drizzle"],
+#main[class*="rain"],
+#main[class*="drizzle"] {
   background-color: #688571;
   background-image: url("../images/rain.jpg"); }
 
-body[class*="storm"] {
+body[class*="storm"],
+#main[class*="storm"] {
   background-color: #440946; }
 
-body[class*="thunderstorm"] {
+body[class*="thunderstorm"],
+#main[class*="thunderstorm"] {
   background-color: #440946;
   background-image: url("../images/thunder.jpg"); }
 
 body[class*="snow"],
-body[class*="sleet"] {
+body[class*="sleet"],
+#main[class*="snow"],
+#main[class*="sleet"] {
   background-color: silver;
   background-image: url("../images/snow.jpg"); }
 
-body[class*="tornado"] {
+body[class*="tornado"],
+#main[class*="tornado"] {
   background-color: #440946; }
 
-body[class*="hurricane"] {
+body[class*="hurricane"],
+#main[class*="hurricane"] {
   background-color: #440946; }
 
-body[class*="hot"] {
+body[class*="hot"],
+#main[class*="hot"] {
   background-color: #CD6B00;
   background-image: url("../images/hot.png"); }
 
-body[class*="cold"] {
+body[class*="cold"],
+#main[class*="cold"] {
   background-color: silver;
   background-image: url("../images/cold.jpg"); }

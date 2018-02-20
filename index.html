@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Local Weather</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Local Weather</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Quote generating featuring Oscar the Grouch.">
-    
-    <link rel='stylesheet' href='assets/vendor/bootstrap/dist/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='assets/vendor/fontawesome/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quote generating featuring Oscar the Grouch.">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='assets/vendor/bootstrap/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='assets/vendor/fontawesome/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
 
-  <body>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div id="main" class="wrapper">
     <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              <h1 class="navbar-brand"><a href="#home">Local Weather</a></h1>
-            </div>
-
-            <div class="collapse navbar-collapse" id="main-navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="https://twitter.com/misfist" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/patricialutz" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
-                <li><a href="https://github.com/misfist" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>
-                <li><a href="http://www.freecodecamp.com/misfist" target="_blank"><span class="fa fa-fire"></span> freeCodeCamp</a></li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 class="navbar-brand"><a href="#home">Local Weather</a></h1>
         </div>
+
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="https://www.linkedin.com/in/patricialutz" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+            <li><a href="https://github.com/misfist" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>
+            <li><a href="https://www.freecodecamp.com/misfist" target="_blank"><span class="fa fa-fire"></span> freeCodeCamp</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <section id="home">
       <div class="container">
         <header class="text-center" role="banner">
           <h2 id="location">{{city.state}}</h2>
+          <h3 id="localtime">{{localtime}}</h3>
           <div id="current-conditions">
-            <div id="description">{{weather.description}}</div>
-            <div class="icon"></div>
-            
+            <span class="icon wi"></span>
+            <span id="description">{{weather.description}}</span>
+
           </div>
-          <h1 id="current-temp">{{main.temp}} <i class="wi"></i>{{F/C}}</h1>
-          <div id="weather-toggle"><label class="hidden">Switch</label> 
-            <a id="imperial"><i class="wi wi-fahrenheit" data-toggle="tooltip" title="Switch temperature units to Fahrenheit"></i> <span class="hidden">Fahrenheit</span></a>
-            <a id="metric"><i class="wi wi-celsius" data-toggle="tooltip" title="Switch temperature units to Celsius"></i> <span class="hidden">Celsius</span></a>
+          <h1 id="current-temp" aria-label="Current Temperature">{{main.temp}}<i class="wi"></i>{{F/C}}</h1>
+          <div id="weather-toggle"><label class="hidden">Switch</label>
+            <a id="imperial" aria-label="Fahrenheit"><i class="wi wi-fahrenheit"></i> <span class="hidden">Fahrenheit</span></a>
+            <a id="metric" aria-label="Celsius"><i class="wi wi-celsius"></i> <span class="hidden">Celsius</span></a>
           </div>
-          <div class="forecast">
-            <span id="high">{{main.temp_max}}</span>
-            <span id="low">{{main.temp_min}}</span>
+          <div class="forecast" aria-label="Today's Forecase">
+            <span id="high" aria-label="High Temp">{{main.temp_max}}</span>
+            <span id="low" aria-label="Low Temp">{{main.temp_min}}</span>
           </div>
         </header>
         <article id="weather-info" class="row">
           <ul >
             <li class="col-xs-12 col-sm-4 well" id="sunrise">
-              <label data-toggle="tooltip" title="Sunrise"><i class="wi wi-sunrise"></i></label> 
+              <label aria="Local Sunrise"><i class="wi wi-sunrise"></i></label>
               <span class="localtime">{{weather.sys.sunrise}}</span></li>
-            <li class="col-xs-12 col-sm-4 well" id="sunset">
-              <label data-toggle="tooltip" title="Sunset"><i class="wi wi-sunset"></i></label> 
-              <span class="localtime">{{weather.sys.sunset}}</span></li>
-            <li class="col-xs-12 col-sm-4 well" id="wind">
-              <label data-toggle="tooltip" title="Wind"><i class="wi wi-strong-wind"></i></label> 
-              <span class="wind">{{wind.speed}}</span></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <footer id="site-footer">
-      <div class="container">
-         <nav class="footer-nav pull-right">
-          <ul class="list-inline">
-              <li><span class="fa fa-twitter"></span> <a href="https://twitter.com/misfist" target="_blank">Twitter</a></li>
-              <li><span class="fa fa-linkedin"></span> <a href="https://www.linkedin.com/in/patricialutz" target="_blank">LinkedIn</a></li>
-              <li><span class="fa fa-github"></span> <a href="https://github.com/misfist" target="_blank">GitHub</a></li>
-              <li><span class="fa fa-fire"></span> <a href="http://www.freecodecamp.com/misfist" target="_blank">freeCodeCamp</a></li>
-          </ul>
-        </nav>
-        <div class="copyleft"><span class="fa fa-copyright fa-flip-horizontal"></span> Copyleft &bull; <a href="https://github.com/misfist/local-weather" target="_blank"><i class="fa fa-github"></i> Source</a></div>
-      </div>
-    </footer>
-      <script src='assets/vendor/jquery/dist/jquery.min.js'></script>
-      <script src='assets/vendor/bootstrap/dist/js/bootstrap.min.js'></script>
-      <script src="assets/js/main.js"></script>
-  </body>
-</html>
+              <li class="col-xs-12 col-sm-4 well" id="sunset">
+                <label aria-label="Local Sunset"><i class="wi wi-sunset"></i></label>
+                <span class="localtime">{{weather.sys.sunset}}</span></li>
+                <li class="col-xs-12 col-sm-4 well" id="wind">
+                  <label aria-label="Wind Speed"><i class="wi wi-strong-wind"></i></label>
+                  <span class="wind">{{wind.speed}}</span></li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <footer id="site-footer">
+            <div class="container">
+              <nav class="footer-nav pull-right">
+                <ul class="list-inline">
+                  <li><span class="fa fa-linkedin"></span> <a href="https://www.linkedin.com/in/patricialutz" target="_blank">LinkedIn</a></li>
+                  <li><span class="fa fa-github"></span> <a href="https://github.com/misfist" target="_blank">GitHub</a></li>
+                  <li><span class="fa fa-fire"></span> <a href="https://www.freecodecamp.com/misfist" target="_blank">freeCodeCamp</a></li>
+                </ul>
+              </nav>
+              <div class="copyleft"><span class="fa fa-copyright fa-flip-horizontal"></span> Copyleft &bull; <a href="https://github.com/misfist/local-weather" target="_blank"><i class="fa fa-github"></i> Source</a></div>
+            </div>
+          </footer>
+        </div>
+        <script src='assets/vendor/jquery/dist/jquery.min.js'></script>
+        <script src='assets/vendor/bootstrap/dist/js/bootstrap.min.js'></script>
+        <script src="assets/js/main.js"></script>
+      </body>
+      </html>
