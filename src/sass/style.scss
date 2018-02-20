@@ -408,6 +408,10 @@ body[class*="clear"],
 #main[class*="clear"] {
   background-color: $clear;
   background-image: url('../images/clear.jpg');
+
+  &.night {
+    
+  }
 }
 
 body[class*="clouds"],

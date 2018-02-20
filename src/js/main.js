@@ -57,9 +57,11 @@
                 var sunrise = new Date( weather.sys.sunrise * 1000 ).toLocaleTimeString();
                 var sunset = new Date( weather.sys.sunset * 1000 ).toLocaleTimeString();
                 var currentConditions = weather.weather[0].main;
+                var currentTime = new Date().toLocaleTimeString();
+                var dayOrNight = ( currentTime > sunset && currentTime < sunrise ) ? 'night' : 'day';
 
                 // Add body classes
-                $( 'body' ).addClass( weatherClass ).addClass( units );
+                $( 'body' ).addClass( weatherClass ).addClass( units ).addClass( dayOrNight );
 
                 // Render mark-up and weather data
                 $( '#current-temp' ).html( Math.round( weather.main.temp ) );
@@ -71,7 +73,7 @@
                 $( '#units' ).addClass( unitsClass );
                 $( '#sunrise' ).find( '.localtime' ).text( sunrise );
                 $( '#sunset' ).find( '.localtime' ).text( sunset );
-                $( '#localtime' ).text( new Date().toLocaleTimeString() );
+                $( '#localtime' ).text( currentTime );
                 var weatherIconEl = $( '#current-conditions .icon' );
                 var currentConditionsLowerCase = currentConditions.toLowerCase();
 

@@ -10,7 +10,8 @@ var gulp = require('gulp'),
 	notify = require( 'gulp-notify' ),
 	include = require( 'gulp-include' ),
 	concat = require('gulp-concat'),
-	sass = require( 'gulp-sass' );
+	sass = require( 'gulp-sass' ),
+	imagemin = require('gulp-imagemin');
 
 var onError = function( error ) {
 	console.error( error.message );
@@ -43,6 +44,12 @@ gulp.task('scripts', function() {
     .pipe( notify( { message: 'Scripts task complete' } ) );
 });
 
+gulp.task( 'images', () =>
+    gulp.src( 'src/images/*' )
+        .pipe(imagemin())
+        .pipe(gulp.dest( 'assets/images') )
+);
+
 
 // Watch
 gulp.task('watch', function() {
@@ -52,6 +59,8 @@ gulp.task('watch', function() {
 
 	// Watch .js files
 	gulp.watch('src/js/**/*.js', ['scripts']);
+
+	gulp.watch('src/images/*', ['images']);
 
 	gulp.watch( './**/*.php' ).on( 'change', function( file ) {
 		livereload.changed( file );
