@@ -79,17 +79,17 @@
 
               // Add some icons
               // Could do this easily with CSS, but need to get the char codes
-              if( currentConditionsLowerCase.includes( 'rain' ) ) {
+              if( dayOrNight == 'night' ) {
+                weatherIconEl.addClass( 'wi-night-clear' );
+              } else if( currentConditionsLowerCase.includes( 'rain' ) ) {
                  weatherIconEl.addClass( 'wi-rain' );
               } else if( currentConditionsLowerCase.includes( 'snow' ) ) {
                  weatherIconEl.addClass( 'wi-snow' );
               } else if( currentConditionsLowerCase.includes( 'cloud' ) ) {
                  weatherIconEl.addClass( 'wi-cloudy' );
-              }
-              else if( currentConditionsLowerCase.includes( 'clear' ) || currentConditionsLowerCase.includes( 'sunny' ) ) {
+              } else if( currentConditionsLowerCase.includes( 'clear' ) || currentConditionsLowerCase.includes( 'sunny' ) ) {
                 weatherIconEl.addClass( 'wi-day-sunny' );
-              }
-              else if( currentConditionsLowerCase.includes( 'fog' ) || currentConditionsLowerCase.includes( 'mist' ) ) {
+              } else if( currentConditionsLowerCase.includes( 'fog' ) || currentConditionsLowerCase.includes( 'mist' ) ) {
                  weatherIconEl.addClass( 'wi-fog' );
               } else if( currentConditionsLowerCase.includes( 'wind' ) ) {
                  weatherIconEl.addClass( 'wi-windy' );
