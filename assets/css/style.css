@@ -92,6 +92,20 @@ body[class*="sleet"],
   #main[class*="sleet"] h2, body[class*="cold"] h2,
   #main[class*="cold"] h2 {
     color: #0B3444; }
+  body[class*="clouds"] .wi:before,
+  #mail[class*="clouds"] .wi:before, body[class*="mist"] .wi:before,
+  body[class*="fog"] .wi:before,
+  #main[class*="mist"] .wi:before,
+  #main[class*="fog"] .wi:before, body[class*="rain"] .wi:before,
+  body[class*="drizzle"] .wi:before,
+  #main[class*="rain"] .wi:before,
+  #main[class*="drizzle"] .wi:before, body[class*="thunderstorm"] .wi:before,
+  #main[class*="thunderstorm"] .wi:before, body[class*="snow"] .wi:before,
+  body[class*="sleet"] .wi:before,
+  #main[class*="snow"] .wi:before,
+  #main[class*="sleet"] .wi:before, body[class*="cold"] .wi:before,
+  #main[class*="cold"] .wi:before {
+    color: #0B3444; }
   body[class*="clouds"] #weather-toggle .wi-fahrenheit,
   #mail[class*="clouds"] #weather-toggle .wi-fahrenheit, body[class*="mist"] #weather-toggle .wi-fahrenheit,
   body[class*="fog"] #weather-toggle .wi-fahrenheit,
@@ -144,6 +158,25 @@ body[class*="sleet"],
   #main[class*="sleet"] #weather-toggle .active .wi-celsius, body[class*="cold"] #weather-toggle .active .wi-celsius,
   #main[class*="cold"] #weather-toggle .active .wi-celsius {
     color: #0B3444; }
+
+body.night,
+#main.night {
+  color: #fff; }
+  body.night h1,
+  #main.night h1, body.night h2,
+  #main.night h2 {
+    color: #fff; }
+  body.night .wi:before,
+  #main.night .wi:before {
+    color: #fff; }
+  body.night #weather-toggle .wi-fahrenheit,
+  #main.night #weather-toggle .wi-fahrenheit, body.night #weather-toggle .wi-celsius,
+  #main.night #weather-toggle .wi-celsius {
+    color: #fff; }
+  body.night #weather-toggle .active .wi-fahrenheit,
+  #main.night #weather-toggle .active .wi-fahrenheit, body.night #weather-toggle .active .wi-celsius,
+  #main.night #weather-toggle .active .wi-celsius {
+    color: #fff; }
 
 html,
 body {
@@ -380,3 +413,8 @@ body[class*="cold"],
 #main[class*="cold"] {
   background-color: silver;
   background-image: url("../images/cold.jpg"); }
+
+body.night,
+#main.night {
+  background-color: #333;
+  background-image: url("../images/night.jpg"); }

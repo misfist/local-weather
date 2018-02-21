@@ -48,6 +48,7 @@ $tornado: $storm;
 $hurricane: $storm;
 $hot: #CD6B00;
 $cold: $snow;
+$dark: $black;
 // windy
 
 
@@ -111,6 +112,11 @@ $lg: 1200px; //Large Devices Large Desktops and Up
     h2 {
       color: $primary-dark;
     }
+
+    .wi:before {
+      color: $primary-dark;
+    }
+
     #weather-toggle .wi-fahrenheit,
     #weather-toggle .wi-celsius {
       color: $white;
@@ -118,6 +124,27 @@ $lg: 1200px; //Large Devices Large Desktops and Up
     #weather-toggle .active .wi-fahrenheit,
     #weather-toggle .active .wi-celsius {
       color: $primary-dark;
+    }
+}
+
+%dark-background {
+    color: $white;
+    h1,
+    h2{
+      color: $white;
+    }
+
+    .wi:before {
+      color: $white;
+    }
+
+    #weather-toggle .wi-fahrenheit,
+    #weather-toggle .wi-celsius {
+      color: $white;
+    }
+    #weather-toggle .active .wi-fahrenheit,
+    #weather-toggle .active .wi-celsius {
+      color: $white;
     }
 }
 
@@ -408,10 +435,6 @@ body[class*="clear"],
 #main[class*="clear"] {
   background-color: $clear;
   background-image: url('../images/clear.jpg');
-
-  &.night {
-    
-  }
 }
 
 body[class*="clouds"],
@@ -481,4 +504,11 @@ body[class*="cold"],
   background-color: $snow;
   background-image: url('../images/cold.jpg');
   @extend %light-background;
+}
+
+body.night,
+#main.night {
+  background-color: $dark;
+  background-image: url('../images/night.jpg');
+  @extend %dark-background;
 }

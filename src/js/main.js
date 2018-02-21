@@ -58,7 +58,7 @@
                 var sunset = new Date( weather.sys.sunset * 1000 ).toLocaleTimeString();
                 var currentConditions = weather.weather[0].main;
                 var currentTime = new Date().toLocaleTimeString();
-                var dayOrNight = ( currentTime > sunset && currentTime < sunrise ) ? 'night' : 'day';
+                var dayOrNight = ( currentTime > sunset && currentTime < sunrise ) ? 'day' : 'night';
 
                 // Add body classes
                 $( 'body' ).addClass( weatherClass ).addClass( units ).addClass( dayOrNight );
